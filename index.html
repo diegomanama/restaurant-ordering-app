@@ -1,20 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/layer-index.css" />
     <link rel="stylesheet" href="/baseline.css" />
     <link rel="stylesheet" href="/index.css" />
 
     <!-- Scripts -->
-    <script type="module" src="index.js"></script>
+    <script type="module" src="/javascript/index.js"></script>
 
     <!-- Other metadata -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant Ordering App</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <hgroup>
+        <h1>Jimmy’s Diner</h1>
+        <p id="tagline">The best burgers and pizzas in town.</p>
+      </hgroup>
+    </header>
+    <main>
+      <div id="menu">
+        <div class="menu-entry">
+          <article class="menu-item">
+            <div class="item-image">🍕</div>
+            <div class="item-data">
+              <h2>Pizza</h2>
+              <p class="ingredients">pepperoni, mushroom, mozzarella</p>
+              <p class="price">$14</p>
+            </div>
+          </article>
+          <button type="button" class="add-item-button">
+            <ion-icon name="add" class="add-item-button-icon"></ion-icon>
+          </button>
+        </div>
+        <div class="menu-entry">
+          <article class="menu-item">
+            <div class="item-image">🍕</div>
+            <div class="item-data">
+              <h2>Pizza</h2>
+              <p class="ingredients">pepperoni, mushroom, mozzarella</p>
+              <p class="price">$14</p>
+            </div>
+          </article>
+          <button type="button" class="add-item-button">
+            <ion-icon name="add" class="add-item-button-icon"></ion-icon>
+          </button>
+        </div>
+        <div class="menu-entry">
+          <article class="menu-item">
+            <div class="item-image">🍕</div>
+            <div class="item-data">
+              <h2>Pizza</h2>
+              <p class="ingredients">pepperoni, mushroom, mozzarella</p>
+              <p class="price">$14</p>
+            </div>
+          </article>
+          <button type="button" class="add-item-button">
+            <ion-icon name="add" class="add-item-button-icon"></ion-icon>
+          </button>
+        </div>
+        <div class="menu-entry">
+          <article class="menu-item">
+            <div class="item-image">🍕</div>
+            <div class="item-data">
+              <h2>Pizza</h2>
+              <p class="ingredients">pepperoni, mushroom, mozzarella</p>
+              <p class="price">$14</p>
+            </div>
+          </article>
+          <button type="button" class="add-item-button">
+            <ion-icon name="add" class="add-item-button-icon"></ion-icon>
+          </button>
+        </div>
+        <div class="menu-entry">
+          <article class="menu-item">
+            <div class="item-image">🍕</div>
+            <div class="item-data">
+              <h2>Pizza</h2>
+              <p class="ingredients">pepperoni, mushroom, mozzarella</p>
+              <p class="price">$14</p>
+            </div>
+          </article>
+          <button type="button" class="add-item-button">
+            <ion-icon name="add" class="add-item-button-icon"></ion-icon>
+          </button>
+        </div>
+        <div class="menu-entry">
+          <article class="menu-item">
+            <div class="item-image">🍕</div>
+            <div class="item-data">
+              <h2>Pizza</h2>
+              <p class="ingredients">pepperoni, mushroom, mozzarella</p>
+              <p class="price">$14</p>
+            </div>
+          </article>
+          <button type="button" class="add-item-button">
+            <ion-icon name="add" class="add-item-button-icon"></ion-icon>
+          </button>
+        </div>
+        <div class="menu-entry">
+          <article class="menu-item">
+            <div class="item-image">🍕</div>
+            <div class="item-data">
+              <h2>Pizza</h2>
+              <p class="ingredients">pepperoni, mushroom, mozzarella</p>
+              <p class="price">$14</p>
+            </div>
+          </article>
+          <button type="button" class="add-item-button">
+            <ion-icon name="add" class="add-item-button-icon"></ion-icon>
+          </button>
+        </div>
+        <div class="menu-entry">
+          <article class="menu-item">
+            <div class="item-image">🍕</div>
+            <div class="item-data">
+              <h2>Pizza</h2>
+              <p class="ingredients">pepperoni, mushroom, mozzarella</p>
+              <p class="price">$14</p>
+            </div>
+          </article>
+          <button type="button" class="add-item-button">
+            <ion-icon name="add" class="add-item-button-icon"></ion-icon>
+          </button>
+        </div>
+        <div class="menu-entry">
+          <article class="menu-item">
+            <div class="item-image">🍕</div>
+            <div class="item-data">
+              <h2>Pizza</h2>
+              <p class="ingredients">pepperoni, mushroom, mozzarella</p>
+              <p class="price">$14</p>
+            </div>
+          </article>
+          <button type="button" class="add-item-button">
+            <ion-icon name="add" class="add-item-button-icon"></ion-icon>
+          </button>
+        </div>
+      </div>
+      <button id="check-order-button">Check order</button>
+    </main>
+    <div class="background-container">
+      <section id="order-container">
+        <h2>Your order</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td>Pizza</td>
+              <td>$14</td>
+            </tr>
+            <tr>
+              <td>Beer</td>
+              <td>$12</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Total price</td>
+              <td>$26</td>
+            </tr>
+          </tfoot>
+        </table>
+        <button id="complete-orden-btn">Complete order</button>
+        <button id="close-order-btn" aria-label="Close order">
+          <ion-icon name="close" aria-hidden="true"></ion-icon>
+        </button>
+      </section>
+    </div>
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

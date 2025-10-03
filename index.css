@@ -1,3 +1,142 @@
-body {
-    margin: 0;
-} 
+@layer initial-rendering {
+  body {
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  header {
+    background: no-repeat center/cover url(/images/hamburger.jpg);
+    color: #ffffff;
+    padding: 2.8rem;
+  }
+
+  /* Menu section */
+
+  #menu {
+    padding-inline: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-block: 2rem;
+  }
+
+  .menu-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .item-image {
+    font-size: 3rem;
+  }
+
+  .add-item-button {
+    font-size: 2rem;
+    block-size: 1em;
+    inline-size: 1em;
+    border-radius: 50%;
+    border: 1px solid #dedede;
+    position: relative;
+    justify-self: end;
+    flex-shrink: 0;
+  }
+
+  .add-item-button-icon {
+    font-size: 0.7em;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+  }
+
+  #check-order-button {
+    position: fixed;
+    inset-block-end: 0;
+    inset-inline: 0;
+    border: none;
+    background: #16db99;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  /* Order section */
+
+  .background-container {
+    position: fixed;
+    inset: 0;
+    background: #00000080;
+    display: none;
+  }
+
+  #order-container {
+    position: absolute;
+    inset-block-end: 0;
+    inline-size: 100%;
+    text-align: center;
+    padding: 2.8rem;
+    background: #ffffff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  #order-container table {
+    inline-size: 100%;
+    border-collapse: collapse;
+    margin-block-end: 1rem;
+  }
+
+  td {
+    padding-block: 0.3rem;
+  }
+
+  tr :nth-child(1) {
+    text-align: left;
+  }
+
+  tr :nth-child(2) {
+    text-align: right;
+  }
+
+  tfoot {
+    border-block-start: 1px solid #000000;
+  }
+
+  #complete-orden-btn {
+    background: #16db99;
+    color: #ffffff;
+    border: none;
+    inline-size: 100%;
+    padding-block: 1rem;
+    cursor: pointer;
+  }
+
+  #close-order-btn {
+    position: absolute;
+    inset: 1rem 1rem auto auto;
+    box-sizing: content-box;
+    font-size: 2rem;
+    block-size: 1em;
+    inline-size: 1em;
+    background: #ffffff00;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@layer post-initial-rendering {
+  .blur {
+    filter: blur(5px);
+  }
+
+  .visible {
+    display: block;
+  }
+}
