@@ -151,33 +151,31 @@
       </div>
       <button id="check-order-button">Check order</button>
     </main>
-    <div class="background-container">
-      <section id="order-container">
-        <h2>Your order</h2>
-        <table>
-          <tbody>
-            <tr>
-              <td>Pizza</td>
-              <td>$14</td>
-            </tr>
-            <tr>
-              <td>Beer</td>
-              <td>$12</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Total price</td>
-              <td>$26</td>
-            </tr>
-          </tfoot>
-        </table>
-        <button id="complete-orden-btn">Complete order</button>
-        <button id="close-order-btn" aria-label="Close order">
-          <ion-icon name="close" aria-hidden="true"></ion-icon>
-        </button>
-      </section>
-    </div>
+    <dialog id="order-modal">
+      <h2>Your order</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td>Pizza</td>
+            <td>$14</td>
+          </tr>
+          <tr>
+            <td>Beer</td>
+            <td>$12</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Total price</td>
+            <td>$26</td>
+          </tr>
+        </tfoot>
+      </table>
+      <button id="complete-orden-btn">Complete order</button>
+      <button id="close-order-btn" aria-label="Close order">
+        <ion-icon name="close" aria-hidden="true"></ion-icon>
+      </button>
+    </dialog>
 
     <!-- Ionicons -->
     <script

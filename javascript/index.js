@@ -1,15 +1,16 @@
 const checkOrdenBtn = document.querySelector("#check-order-button");
 const closeOrderBtn = document.querySelector("#close-order-btn");
-const backgroundContainer = document.querySelector(".background-container");
-const flowLayout = document.querySelectorAll(
-  "body > :not(.background-container)"
-);
+const orderModal = document.querySelector("#order-modal");
+const nonModalContent = document.querySelector(":not(:modal)");
 
-[checkOrdenBtn, closeOrderBtn].forEach((element) => {
-  element.addEventListener("click", () => {
-    backgroundContainer.classList.toggle("visible");
-    flowLayout.forEach((element) => element.classList.toggle("blur"));
-  });
+checkOrdenBtn.addEventListener("click", () => {
+  orderModal.showModal();
+  nonModalContent.classList.toggle("blur");
+});
+
+closeOrderBtn.addEventListener("click", () => {
+  orderModal.close();
+  nonModalContent.classList.toggle("blur");
 });
 
 const completeOrdenBtn = document.querySelector("#complete-orden-btn");

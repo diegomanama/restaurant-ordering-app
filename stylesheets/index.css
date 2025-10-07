@@ -69,22 +69,24 @@
 
   /* Order section */
 
-  .background-container {
-    position: fixed;
-    inset: 0;
-    background: #00000080;
-    display: none;
+  :modal {
+    max-block-size: unset;
+    max-inline-size: unset;
   }
 
-  #order-container {
-    position: absolute;
-    inset-block-end: 0;
+  ::backdrop {
+    background: #00000080;
+  }
+
+  #order-modal {
+    margin-block-start: auto;
     inline-size: 100%;
     text-align: center;
     padding: 2.8rem;
     background: #ffffff;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    border: none;
   }
 
   #order-container table {
@@ -134,9 +136,5 @@
 @layer post-initial-rendering {
   .blur {
     filter: blur(5px);
-  }
-
-  .visible {
-    display: block;
   }
 }
