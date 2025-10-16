@@ -89,7 +89,7 @@
     border: none;
   }
 
-  #order-container table {
+  #order-modal table {
     inline-size: 100%;
     border-collapse: collapse;
     margin-block-end: 1rem;
