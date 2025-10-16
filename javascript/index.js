@@ -16,5 +16,20 @@ closeOrderBtn.addEventListener("click", () => {
 const completeOrdenBtn = document.querySelector("#complete-orden-btn");
 
 completeOrdenBtn.addEventListener("click", () => {
-  console.log("click");
+  orderModal.close();
+  paymentModal.showModal();
+});
+
+const paymentModal = document.querySelector("#payment-modal");
+const closePaymentBtn = document.querySelector("#close-payment-btn");
+const payButton = document.querySelector("#pay-button");
+
+closePaymentBtn.addEventListener("click", () => {
+  paymentModal.close();
+  nonModalContent.classList.toggle("blur");
+});
+
+payButton.addEventListener("click", () => {
+  paymentModal.close();
+  nonModalContent.classList.toggle("blur");
 });

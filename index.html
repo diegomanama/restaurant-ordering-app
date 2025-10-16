@@ -172,9 +172,47 @@
         </tfoot>
       </table>
       <button id="complete-orden-btn">Complete order</button>
-      <button id="close-order-btn" aria-label="Close order">
-        <ion-icon name="close" aria-hidden="true"></ion-icon>
+      <button id="close-order-btn" class="close-btn" aria-label="Close order">
+        <ion-icon name="close" class="close-icon" aria-hidden="true"></ion-icon>
       </button>
+    </dialog>
+    <dialog id="payment-modal">
+      <button
+        id="close-payment-btn"
+        class="close-btn"
+        aria-label="Close payment area"
+      >
+        <ion-icon name="close" class="close-icon" aria-hidden="true"></ion-icon>
+      </button>
+      <form method="dialog" id="card-details-form">
+        <h2>Enter card details</h2>
+        <fieldset>
+          <input
+            type="text"
+            name="customer-name"
+            placeholder="Enter your name"
+            required
+            aria-label="Enter your fullname"
+          />
+          <input
+            type="number"
+            name="card-number"
+            placeholder="Enter card number"
+            required
+            aria-label="Enter your card number"
+            min="00000001"
+            max="9999999999999999999"
+          />
+          <input
+            type="number"
+            name="cvv"
+            placeholder="Enter CVV"
+            required
+            aria-label="Enter your card CVV (card verification value)"
+          />
+        </fieldset>
+        <button type="button" id="pay-button">Pay</button>
+      </form>
     </dialog>
 
     <!-- Ionicons -->

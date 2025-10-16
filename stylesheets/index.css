@@ -120,9 +120,8 @@
     cursor: pointer;
   }
 
-  #close-order-btn {
+  .close-btn {
     position: absolute;
-    inset: 1rem 1rem auto auto;
     box-sizing: content-box;
     font-size: 2rem;
     block-size: 1em;
@@ -130,6 +129,77 @@
     background: #ffffff00;
     border: none;
     cursor: pointer;
+    padding: 0;
+  }
+
+  .close-btn > .close-icon {
+    position: absolute;
+    inset: 0;
+  }
+
+  #close-order-btn {
+    inset: 1rem 1rem auto auto;
+  }
+
+  #payment-modal {
+    margin: auto;
+    border: none;
+    border-radius: 3px;
+    padding: 1.5rem;
+    inline-size: 80vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+
+  #card-details-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #card-details-form fieldset {
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Remove number input spinners */
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  #card-details-form input {
+    padding: 1rem;
+    border: 1px solid #757575;
+    inline-size: 100%;
+  }
+
+  #card-details-form input::placeholder {
+    color: #757575;
+  }
+
+  #pay-button {
+    background: #16db99;
+    color: #ffffff;
+    border: none;
+    inline-size: 100%;
+    padding-block: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  #close-payment-btn {
+    inset: 0.1rem 0.1rem auto auto;
   }
 }
 
