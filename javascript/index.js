@@ -1,6 +1,6 @@
 // DOM element references
 const checkOrderBtn = document.querySelector("#check-order-button");
-const closeOrderBtn = document.querySelector("#close-order-btn");
+const closeOrderModalBtn = document.querySelector("#close-order-modal-btn");
 const completeOrderBtn = document.querySelector("#complete-order-btn");
 const orderModal = document.querySelector("#order-modal");
 const paymentModal = document.querySelector("#payment-modal");
@@ -14,7 +14,7 @@ checkOrderBtn.addEventListener("click", () => {
   nonModalContent.classList.toggle("blur");
 });
 
-closeOrderBtn.addEventListener("click", () => {
+closeOrderModalBtn.addEventListener("click", () => {
   orderModal.close();
   nonModalContent.classList.toggle("blur");
 });
