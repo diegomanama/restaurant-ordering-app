@@ -6,7 +6,18 @@ const orderModal = document.querySelector("#order-modal");
 const paymentModal = document.querySelector("#payment-modal");
 const closePaymentBtn = document.querySelector("#close-payment-btn");
 const payButton = document.querySelector("#pay-button");
+const finalModal = document.querySelector("#final-modal");
+const closeFinalModalBtn = document.querySelector("#close-final-modal-btn");
+const finalMessage = document.querySelector("#final-message");
 const nonModalContent = document.querySelector(":not(:modal)");
+
+// Functions
+
+const equateElementHeights = (baseEl, targetEL) => {
+  targetEL.style.blockSize = window
+    .getComputedStyle(baseEl)
+    .getPropertyValue("block-size");
+};
 
 // Event listeners
 checkOrderBtn.addEventListener("click", () => {
@@ -30,6 +41,19 @@ closePaymentBtn.addEventListener("click", () => {
 });
 
 payButton.addEventListener("click", () => {
+  const customerName = new FormData(
+    document.querySelector("#card-details-form")
+  ).get("customer-name");
+
+  finalMessage.textContent = customerName
+    ? `Thanks, ${customerName}! Your order is on its way`
+    : `Thanks! Your order is on its way`;
+  equateElementHeights(paymentModal, finalModal);
   paymentModal.close();
+  finalModal.showModal();
+});
+
+closeFinalModalBtn.addEventListener("click", () => {
+  finalModal.close();
   nonModalContent.classList.toggle("blur");
 });

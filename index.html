@@ -180,10 +180,10 @@
         <ion-icon name="close" class="close-icon" aria-hidden="true"></ion-icon>
       </button>
     </dialog>
-    <dialog id="payment-modal">
+    <dialog id="payment-modal" class="floating-modal">
       <button
         id="close-payment-btn"
-        class="close-btn"
+        class="close-btn close-floating-modal-btn"
         aria-label="Close payment modal"
       >
         <ion-icon name="close" class="close-icon" aria-hidden="true"></ion-icon>
@@ -217,6 +217,16 @@
         </fieldset>
         <button type="button" id="pay-button">Pay</button>
       </form>
+    </dialog>
+    <dialog id="final-modal" class="floating-modal">
+      <button
+        id="close-final-modal-btn"
+        class="close-btn close-floating-modal-btn"
+        aria-label="Close final modal"
+      >
+        <ion-icon name="close" class="close-icon" aria-hidden="true"></ion-icon>
+      </button>
+      <p id="final-message"></p>
     </dialog>
 
     <!-- Ionicons -->

@@ -142,13 +142,7 @@
   }
 
   #payment-modal {
-    margin: auto;
-    border: none;
-    border-radius: 3px;
-    padding: 1.5rem;
-    inline-size: 80vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
   }
 
   #card-details-form {
@@ -198,8 +192,25 @@
     font-weight: bold;
   }
 
-  #close-payment-btn {
+  .close-floating-modal-btn {
     inset: 0.1rem 0.1rem auto auto;
+  }
+
+  .floating-modal {
+    margin: auto;
+    border: none;
+    border-radius: 3px;
+    padding: 1.5rem;
+    inline-size: 80vw;
+    text-align: center;
+  }
+
+  #final-modal:open {
+    color: #065f46;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
