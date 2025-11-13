@@ -13,7 +13,7 @@ const menuEntriesHTML = menuItems
                     <p class="price">$${item.price}</p>
                 </div>
             </article>
-            <button type="button" class="add-item-button">
+            <button type="button" class="add-item-button" data-item-name="${item.name}">
                 <ion-icon name="add" class="add-item-button-icon"></ion-icon>
             </button>
         </div> 
@@ -22,3 +22,5 @@ const menuEntriesHTML = menuItems
   .join("");
 
 menu.innerHTML = menuEntriesHTML;
+
+export const addItemButtons = document.querySelectorAll(".add-item-button");

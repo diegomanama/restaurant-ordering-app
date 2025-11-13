@@ -16,6 +16,7 @@
 
     <!-- Scripts -->
     <script type="module" src="javascript/render-menu-entries.js"></script>
+    <script type="module" src="javascript/updateOrder.js"></script>
     <script type="module" src="/javascript/modals.js"></script>
 
     <!-- Other metadata -->
@@ -36,21 +37,12 @@
     </main>
     <dialog id="order-modal">
       <h2>Your order</h2>
-      <table>
-        <tbody>
-          <tr>
-            <td>Pizza</td>
-            <td>$14</td>
-          </tr>
-          <tr>
-            <td>Beer</td>
-            <td>$12</td>
-          </tr>
-        </tbody>
+      <table id="order-table">
+        <tbody></tbody>
         <tfoot>
           <tr>
             <td>Total price</td>
-            <td>$26</td>
+            <td id="total-price-cell"></td>
           </tr>
         </tfoot>
       </table>
