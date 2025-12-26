@@ -15,6 +15,7 @@
 
   main {
     --check-order-button-max-block-size: 3.25rem;
+    pointer-events: none;
   }
 
   #menu {
@@ -53,6 +54,7 @@
     justify-self: end;
     flex-shrink: 0;
     cursor: pointer;
+    pointer-events: auto;
   }
 
   .add-item-button-icon {
@@ -73,6 +75,7 @@
     cursor: pointer;
     max-block-size: var(--check-order-button-max-block-size);
     cursor: not-allowed;
+    pointer-events: auto;
   }
 
   /* Order modal */
