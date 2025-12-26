@@ -23,20 +23,20 @@ const updateOrderTable = (event) => {
       return element.dataset.itemName === matchingItem.name;
     })[0];
 
-    targetRow.amount++;
+    targetRow.dataset.amount = Number(targetRow.dataset.amount) + 1;
 
     targetRow.querySelector(":first-child").textContent =
-      `${matchingItem.name} × ${targetRow.amount}`;
+      `${matchingItem.name} × ${targetRow.dataset.amount}`;
 
     targetRow.querySelector(":last-child").textContent =
-      `$${matchingItem.price * targetRow.amount}`;
+      `$${matchingItem.price * Number(targetRow.dataset.amount)}`;
   } else {
     // Add new rows for items not added yet
 
     const newTableRow = document.createElement("tr");
 
     newTableRow.dataset.itemName = matchingItem.name;
-    newTableRow.amount = 1;
+    newTableRow.dataset.amount = 1;
 
     newTableRow.innerHTML = `
       <td>${matchingItem.name}</td>
