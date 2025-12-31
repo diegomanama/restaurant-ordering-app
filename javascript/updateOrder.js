@@ -5,7 +5,7 @@ import { addEventListenerAll } from "../utils/addEventListenerAll.js";
 const orderTableBody = document.querySelector("#order-table > tbody");
 const totalPriceCell = document.querySelector("#total-price-cell");
 
-const updateOrderTable = (event) => {
+const addItemToOrder = (event) => {
   const addItemBtn = event.currentTarget;
 
   const matchingItem = menuArray.filter((item) => {
@@ -70,4 +70,4 @@ const removeEntryFromOrder = (targetRow) => {
   targetRow.remove();
 };
 
-addEventListenerAll(addItemButtons, "click", updateOrderTable);
+addEventListenerAll(addItemButtons, "click", addItemToOrder);
