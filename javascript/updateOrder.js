@@ -57,6 +57,15 @@ const addItemToOrder = (event) => {
 
   // Update total price
 
+  updateTotalPrice();
+};
+
+const removeEntryFromOrder = (targetRow) => {
+  targetRow.remove();
+  updateTotalPrice();
+};
+
+const updateTotalPrice = () => {
   let totalPrice = 0;
 
   document.querySelectorAll(".product-price-cell").forEach((cell) => {
@@ -64,10 +73,6 @@ const addItemToOrder = (event) => {
   });
 
   totalPriceCell.textContent = `$${totalPrice}`;
-};
-
-const removeEntryFromOrder = (targetRow) => {
-  targetRow.remove();
 };
 
 addEventListenerAll(addItemButtons, "click", addItemToOrder);
