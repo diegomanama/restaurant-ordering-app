@@ -118,6 +118,24 @@
     text-align: right;
   }
 
+  .product-main-cell {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .remove-item-button {
+    font-size: 0.7rem;
+    block-size: 2em;
+    color: #ff0000;
+    background: #ffa8a8;
+    padding-inline: 0.7em;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 2em / 100%;
+    cursor: pointer;
+  }
+
   tfoot {
     border-block-start: 1px solid #000000;
   }

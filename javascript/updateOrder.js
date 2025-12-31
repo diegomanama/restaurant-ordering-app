@@ -25,10 +25,10 @@ const updateOrderTable = (event) => {
 
     targetRow.dataset.amount = Number(targetRow.dataset.amount) + 1;
 
-    targetRow.querySelector(":first-child").textContent =
+    targetRow.querySelector(".item-name-container").textContent =
       `${matchingItem.name} × ${targetRow.dataset.amount}`;
 
-    targetRow.querySelector(":last-child").textContent =
+    targetRow.querySelector(".product-price-cell").textContent =
       `$${matchingItem.price * Number(targetRow.dataset.amount)}`;
   } else {
     // Add new rows for items not added yet
@@ -39,9 +39,18 @@ const updateOrderTable = (event) => {
     newTableRow.dataset.amount = 1;
 
     newTableRow.innerHTML = `
-      <td>${matchingItem.name}</td>
+      <td class="product-main-cell">
+        <span class="item-name-container">${matchingItem.name}</span>
+        <button class="remove-item-button" >Remove</button>
+      </td>
       <td class="product-price-cell">$${matchingItem.price}</td>
     `;
+
+    newTableRow
+      .querySelector(".remove-item-button")
+      .addEventListener("click", () => removeEntryFromOrder(newTableRow), {
+        once: true,
+      });
 
     orderTableBody.append(newTableRow);
   }
@@ -55,6 +64,10 @@ const updateOrderTable = (event) => {
   });
 
   totalPriceCell.textContent = `$${totalPrice}`;
+};
+
+const removeEntryFromOrder = (targetRow) => {
+  targetRow.remove();
 };
 
 addEventListenerAll(addItemButtons, "click", updateOrderTable);
