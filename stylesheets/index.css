@@ -140,7 +140,7 @@
     border-block-start: 1px solid #000000;
   }
 
-  #complete-order-btn {
+  #complete-order-button {
     background: #16db99;
     color: #ffffff;
     border: none;
@@ -149,7 +149,7 @@
     cursor: pointer;
   }
 
-  .close-btn {
+  .close-button {
     position: absolute;
     box-sizing: content-box;
     font-size: 2rem;
@@ -161,12 +161,12 @@
     padding: 0;
   }
 
-  .close-btn > .close-icon {
+  .close-button > .close-icon {
     position: absolute;
     inset: 0;
   }
 
-  #close-order-modal-btn {
+  #close-order-modal-button {
     inset: 1rem 1rem auto auto;
   }
 
@@ -221,7 +221,7 @@
     font-weight: bold;
   }
 
-  .close-floating-modal-btn {
+  .close-floating-modal-button {
     inset: 0.1rem 0.1rem auto auto;
   }
 

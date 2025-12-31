@@ -1,13 +1,17 @@
 // DOM element references
-const checkOrderBtn = document.querySelector("#check-order-button");
-const closeOrderModalBtn = document.querySelector("#close-order-modal-btn");
-const completeOrderBtn = document.querySelector("#complete-order-btn");
+const checkOrderButton = document.querySelector("#check-order-button");
+const closeOrderModalButton = document.querySelector(
+  "#close-order-modal-button"
+);
+const completeOrderButton = document.querySelector("#complete-order-button");
 const orderModal = document.querySelector("#order-modal");
 const paymentModal = document.querySelector("#payment-modal");
-const closePaymentBtn = document.querySelector("#close-payment-btn");
+const closePaymentButton = document.querySelector("#close-payment-button");
 const payButton = document.querySelector("#pay-button");
 const finalModal = document.querySelector("#final-modal");
-const closeFinalModalBtn = document.querySelector("#close-final-modal-btn");
+const closeFinalModalButton = document.querySelector(
+  "#close-final-modal-button"
+);
 const finalMessage = document.querySelector("#final-message");
 const nonModalContent = document.querySelector(":not(:modal)");
 
@@ -20,22 +24,22 @@ const equateElementHeights = (baseEl, targetEL) => {
 };
 
 // Event listeners
-checkOrderBtn.addEventListener("click", () => {
+checkOrderButton.addEventListener("click", () => {
   orderModal.showModal();
   nonModalContent.classList.toggle("blur");
 });
 
-closeOrderModalBtn.addEventListener("click", () => {
+closeOrderModalButton.addEventListener("click", () => {
   orderModal.close();
   nonModalContent.classList.toggle("blur");
 });
 
-completeOrderBtn.addEventListener("click", () => {
+completeOrderButton.addEventListener("click", () => {
   orderModal.close();
   paymentModal.showModal();
 });
 
-closePaymentBtn.addEventListener("click", () => {
+closePaymentButton.addEventListener("click", () => {
   paymentModal.close();
   nonModalContent.classList.toggle("blur");
 });
@@ -53,7 +57,7 @@ payButton.addEventListener("click", () => {
   finalModal.showModal();
 });
 
-closeFinalModalBtn.addEventListener("click", () => {
+closeFinalModalButton.addEventListener("click", () => {
   finalModal.close();
   nonModalContent.classList.toggle("blur");
 });

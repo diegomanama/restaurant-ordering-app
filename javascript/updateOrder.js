@@ -6,10 +6,10 @@ const orderTableBody = document.querySelector("#order-table > tbody");
 const totalPriceCell = document.querySelector("#total-price-cell");
 
 const addItemToOrder = (event) => {
-  const addItemBtn = event.currentTarget;
+  const addItemButton = event.currentTarget;
 
   const matchingItem = menuArray.filter((item) => {
-    return item.name === addItemBtn.dataset.itemName;
+    return item.name === addItemButton.dataset.itemName;
   })[0];
 
   if (
