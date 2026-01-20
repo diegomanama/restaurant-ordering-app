@@ -1,6 +1,6 @@
-const checkOrderButton = document.querySelector("#check-order-button");
+import { checkOrderButton, main } from "./shared-dom-refs.js";
 
-document.querySelector("main").addEventListener("click", () => {
+main.addEventListener("click", () => {
   checkOrderButton.disabled = false;
   checkOrderButton.classList.add("enabled-button");
 });

@@ -1,6 +1,6 @@
 import { menuArray as menuItems } from "./data.js";
+import { menu } from "./shared-dom-refs.js";
 
-const menu = document.querySelector("#menu");
 const menuEntriesHTML = menuItems
   .map((item) => {
     return `

@@ -1,23 +1,20 @@
-// DOM element references
-const checkOrderButton = document.querySelector("#check-order-button");
-const closeOrderModalButton = document.querySelector(
-  "#close-order-modal-button"
-);
-const completeOrderButton = document.querySelector("#complete-order-button");
-const orderModal = document.querySelector("#order-modal");
-const paymentModal = document.querySelector("#payment-modal");
-const closePaymentButton = document.querySelector("#close-payment-button");
-const payButton = document.querySelector("#pay-button");
-const finalModal = document.querySelector("#final-modal");
-const closeFinalModalButton = document.querySelector(
-  "#close-final-modal-button"
-);
-const finalMessage = document.querySelector("#final-message");
-const nonModalContent = document.querySelector(":not(:modal)");
+import {
+  checkOrderButton,
+  closeOrderModalButton,
+  completeOrderButton,
+  orderModal,
+  paymentModal,
+  closePaymentButton,
+  payButton,
+  finalModal,
+  closeFinalModalButton,
+  finalMessage,
+  nonModalContent
+} from "./shared-dom-refs.js";
 
 // Functions
 
-const equateElementHeights = (baseEl, targetEL) => {
+export const equateElementHeights = (baseEl, targetEL) => {
   targetEL.style.blockSize = window
     .getComputedStyle(baseEl)
     .getPropertyValue("block-size");

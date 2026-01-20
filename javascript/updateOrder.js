@@ -1,9 +1,7 @@
 import { menuArray } from "./data.js";
 import { addItemButtons } from "./render-menu-entries.js";
 import { addEventListenerAll } from "../utils/addEventListenerAll.js";
-
-const orderTableBody = document.querySelector("#order-table > tbody");
-const totalPriceCell = document.querySelector("#total-price-cell");
+import { orderTableBody, totalPriceCell } from "./shared-dom-refs.js";
 
 const addItemToOrder = (event) => {
   const addItemButton = event.currentTarget;
