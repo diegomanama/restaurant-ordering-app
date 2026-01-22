@@ -75,25 +75,32 @@
             placeholder="Enter your name"
             required
             aria-label="Enter your fullname"
+            minlength="2"
+            maxlength="50"
+            autocomplete="name"
           />
           <input
-            type="number"
+            type="text"
             name="card-number"
             placeholder="Enter card number"
             required
             aria-label="Enter your card number"
-            min="00000001"
-            max="9999999999999999999"
+            maxlength="19"
+            pattern="[0-9]{13,19}"
+            autocomplete="cc-number"
           />
           <input
-            type="number"
+            type="text"
             name="cvv"
             placeholder="Enter CVV"
             required
             aria-label="Enter your card CVV (card verification value)"
+            maxlength="4"
+            pattern="[0-9]{3,4}"
+            autocomplete="cc-csc"
           />
         </fieldset>
-        <button type="button" id="pay-button">Pay</button>
+        <button type="submit" id="pay-button">Pay</button>
       </form>
     </dialog>
     <dialog id="final-modal" class="floating-modal">

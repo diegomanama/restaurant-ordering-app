@@ -45,12 +45,14 @@ closePaymentButton.addEventListener("click", () => {
 payButton.addEventListener("click", () => {
   const customerName = new FormData(cardDetailsForm).get("customer-name");
 
-  finalMessage.textContent = customerName
-    ? `Thanks, ${customerName}! Your order is on its way`
-    : `Thanks! Your order is on its way`;
-  equateElementHeights(paymentModal, finalModal);
-  paymentModal.close();
-  finalModal.showModal();
+  if (cardDetailsForm.reportValidity()) {
+    finalMessage.textContent = customerName
+      ? `Thanks, ${customerName}! Your order is on its way`
+      : `Thanks! Your order is on its way`;
+    equateElementHeights(paymentModal, finalModal);
+    // The dialog is natively automatically closed when the form is submitted
+    finalModal.showModal();
+  };
 });
 
 closeFinalModalButton.addEventListener("click", () => {
