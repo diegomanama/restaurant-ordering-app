@@ -5,6 +5,7 @@ import {
   orderModal,
   paymentModal,
   closePaymentButton,
+  cardDetailsForm,
   payButton,
   finalModal,
   closeFinalModalButton,
@@ -42,9 +43,7 @@ closePaymentButton.addEventListener("click", () => {
 });
 
 payButton.addEventListener("click", () => {
-  const customerName = new FormData(
-    document.querySelector("#card-details-form")
-  ).get("customer-name");
+  const customerName = new FormData(cardDetailsForm).get("customer-name");
 
   finalMessage.textContent = customerName
     ? `Thanks, ${customerName}! Your order is on its way`

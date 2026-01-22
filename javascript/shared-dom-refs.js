@@ -10,6 +10,7 @@ export const completeOrderButton = document.querySelector("#complete-order-butto
 export const orderModal = document.querySelector("#order-modal");
 export const paymentModal = document.querySelector("#payment-modal");
 export const closePaymentButton = document.querySelector("#close-payment-button");
+export const cardDetailsForm = document.querySelector("#card-details-form");
 export const payButton = document.querySelector("#pay-button");
 export const finalModal = document.querySelector("#final-modal");
 export const closeFinalModalButton = document.querySelector("#close-final-modal-button");
