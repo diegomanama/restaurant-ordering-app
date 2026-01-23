@@ -1,4 +1,9 @@
-import { orderTableBody, checkOrderButton, orderModal, nonModalContent } from "./shared-dom-refs.js";
+import {
+  orderTableBody,
+  checkOrderButton,
+  orderModal,
+  nonModalContent,
+} from "./shared-dom-refs.js";
 
 const handleEmptyOrderState = () => {
   if (orderTableBody.children.length === 0) {

@@ -10,7 +10,7 @@ import {
   finalModal,
   closeFinalModalButton,
   finalMessage,
-  nonModalContent
+  nonModalContent,
 } from "./shared-dom-refs.js";
 
 // Functions
@@ -52,7 +52,7 @@ payButton.addEventListener("click", () => {
     equateElementHeights(paymentModal, finalModal);
     // The dialog is natively automatically closed when the form is submitted
     finalModal.showModal();
-  };
+  }
 });
 
 closeFinalModalButton.addEventListener("click", () => {

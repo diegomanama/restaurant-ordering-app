@@ -1,7 +1,11 @@
 import { menuArray } from "./data.js";
 import { addItemButtons } from "./render-menu-entries.js";
 import { addEventListenerAll } from "../utils/addEventListenerAll.js";
-import { orderTableBody, totalPriceCell } from "./shared-dom-refs.js";
+import {
+  orderTableBody,
+  totalPriceCell,
+  cardDetailsForm,
+} from "./shared-dom-refs.js";
 
 const addItemToOrder = (event) => {
   const addItemButton = event.currentTarget;
