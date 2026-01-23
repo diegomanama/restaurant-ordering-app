@@ -67,6 +67,11 @@ const removeEntryFromOrder = (targetRow) => {
   updateTotalPrice();
 };
 
+const resetOrder = () => {
+  orderTableBody.innerHTML = "";
+  updateTotalPrice();
+};
+
 const updateTotalPrice = () => {
   let totalPrice = 0;
 
@@ -78,3 +83,4 @@ const updateTotalPrice = () => {
 };
 
 addEventListenerAll(addItemButtons, "click", addItemToOrder);
+cardDetailsForm.addEventListener("submit", resetOrder);
