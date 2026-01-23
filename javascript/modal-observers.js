@@ -10,7 +10,6 @@ const handleEmptyOrderState = () => {
     checkOrderButton.disabled = true;
     checkOrderButton.classList.remove("enabled-button");
     orderModal.close();
-    nonModalContent.classList.toggle("blur");
   }
 };
 

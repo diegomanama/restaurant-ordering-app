@@ -12,6 +12,9 @@ import {
   finalMessage,
   nonModalContent,
 } from "./shared-dom-refs.js";
+import { addEventListenerAll } from "../utils/addEventListenerAll.js";
+
+const modals = [orderModal, paymentModal, finalModal];
 
 // Functions
 
@@ -29,7 +32,6 @@ checkOrderButton.addEventListener("click", () => {
 
 closeOrderModalButton.addEventListener("click", () => {
   orderModal.close();
-  nonModalContent.classList.toggle("blur");
 });
 
 completeOrderButton.addEventListener("click", () => {
@@ -39,7 +41,6 @@ completeOrderButton.addEventListener("click", () => {
 
 closePaymentButton.addEventListener("click", () => {
   paymentModal.close();
-  nonModalContent.classList.toggle("blur");
 });
 
 payButton.addEventListener("click", () => {
@@ -57,5 +58,12 @@ payButton.addEventListener("click", () => {
 
 closeFinalModalButton.addEventListener("click", () => {
   finalModal.close();
+});
+
+addEventListenerAll(modals, "close", () => {
+  if (modals.some((modal) => modal.open)) {
+    return;
+  }
+
   nonModalContent.classList.toggle("blur");
 });
