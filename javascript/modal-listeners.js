@@ -7,16 +7,16 @@ import {
   closePaymentButton,
   cardDetailsForm,
   payButton,
-  finalModal,
-  closeFinalModalButton,
-  finalMessage,
+  thankYouModal,
+  closeThankYouModalButton,
+  thankYouMessage,
   openRatingModalButton,
   ratingModal,
   nonModalContent,
 } from "./shared-dom-refs.js";
 import { addEventListenerAll } from "../utils/addEventListenerAll.js";
 
-const modals = [orderModal, paymentModal, finalModal, ratingModal];
+const modals = [orderModal, paymentModal, thankYouModal, ratingModal];
 
 // Functions
 
@@ -49,21 +49,21 @@ payButton.addEventListener("click", () => {
   const customerName = new FormData(cardDetailsForm).get("customer-name");
 
   if (cardDetailsForm.reportValidity()) {
-    finalMessage.textContent = customerName
+    thankYouMessage.textContent = customerName
       ? `Thanks, ${customerName}! Your order is on its way`
       : `Thanks! Your order is on its way`;
-    equateElementHeights(paymentModal, finalModal);
+    equateElementHeights(paymentModal, thankYouModal);
     // The dialog is natively automatically closed when the form is submitted
-    finalModal.showModal();
+    thankYouModal.showModal();
   }
 });
 
-closeFinalModalButton.addEventListener("click", () => {
-  finalModal.close();
+closeThankYouModalButton.addEventListener("click", () => {
+  thankYouModal.close();
 });
 
 openRatingModalButton.addEventListener("click", () => {
-  finalModal.close();
+  thankYouModal.close();
   ratingModal.showModal();
 });
 

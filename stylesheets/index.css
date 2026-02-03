@@ -234,7 +234,7 @@
     text-align: center;
   }
 
-  #final-modal:open {
+  #thank-you-modal:open {
     color: #065f46;
     font-size: 2rem;
     display: flex;

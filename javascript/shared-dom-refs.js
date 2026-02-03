@@ -18,11 +18,11 @@ export const closePaymentButton = document.querySelector(
 );
 export const cardDetailsForm = document.querySelector("#card-details-form");
 export const payButton = document.querySelector("#pay-button");
-export const finalModal = document.querySelector("#final-modal");
-export const closeFinalModalButton = document.querySelector(
-  "#close-final-modal-button"
+export const thankYouModal = document.querySelector("#thank-you-modal");
+export const closeThankYouModalButton = document.querySelector(
+  "#close-thank-you-modal-button"
 );
-export const finalMessage = document.querySelector("#final-message");
+export const thankYouMessage = document.querySelector("#thank-you-message");
 export const openRatingModalButton = document.querySelector(
   "#open-rating-modal-button"
 );
