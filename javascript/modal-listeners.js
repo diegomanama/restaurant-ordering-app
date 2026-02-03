@@ -10,11 +10,13 @@ import {
   finalModal,
   closeFinalModalButton,
   finalMessage,
+  openRatingModalButton,
+  ratingModal,
   nonModalContent,
 } from "./shared-dom-refs.js";
 import { addEventListenerAll } from "../utils/addEventListenerAll.js";
 
-const modals = [orderModal, paymentModal, finalModal];
+const modals = [orderModal, paymentModal, finalModal, ratingModal];
 
 // Functions
 
@@ -58,6 +60,25 @@ payButton.addEventListener("click", () => {
 
 closeFinalModalButton.addEventListener("click", () => {
   finalModal.close();
+});
+
+openRatingModalButton.addEventListener("click", () => {
+  finalModal.close();
+  ratingModal.showModal();
+});
+
+ratingModal.addEventListener("click", (event) => {
+  const hitArea = ratingModal.getBoundingClientRect();
+
+  const clickedInside =
+    event.clientX >= hitArea.left &&
+    event.clientX <= hitArea.right &&
+    event.clientY >= hitArea.top &&
+    event.clientY <= hitArea.bottom;
+
+  if (!clickedInside) {
+    ratingModal.close();
+  }
 });
 
 addEventListenerAll(modals, "close", () => {

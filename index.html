@@ -21,6 +21,7 @@
     <script type="module" src="javascript/updateOrder.js"></script>
     <script type="module" src="javascript/modal-listeners.js"></script>
     <script type="module" src="javascript/modal-observers.js"></script>
+    <script type="module" src="javascript/rating-stars-events.js"></script>
 
     <!-- Other metadata -->
     <meta charset="UTF-8" />
@@ -112,6 +113,37 @@
         <ion-icon name="close" class="close-icon" aria-hidden="true"></ion-icon>
       </button>
       <p id="final-message"></p>
+      <button id="open-rating-modal-button">Rate experience</button>
+    </dialog>
+    <dialog id="rating-modal">
+      <p>How was your experience with us? Take a moment to leave a rating.</p>
+      <div id="rating-stars-container">
+        <ion-icon
+          name="star-outline"
+          class="rating-star"
+          data-rating-value="1"
+        ></ion-icon>
+        <ion-icon
+          name="star-outline"
+          class="rating-star"
+          data-rating-value="2"
+        ></ion-icon>
+        <ion-icon
+          name="star-outline"
+          class="rating-star"
+          data-rating-value="3"
+        ></ion-icon>
+        <ion-icon
+          name="star-outline"
+          class="rating-star"
+          data-rating-value="4"
+        ></ion-icon>
+        <ion-icon
+          name="star-outline"
+          class="rating-star"
+          data-rating-value="5"
+        ></ion-icon>
+      </div>
     </dialog>
 
     <!-- Ionicons -->

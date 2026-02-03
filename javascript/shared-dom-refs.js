@@ -23,4 +23,12 @@ export const closeFinalModalButton = document.querySelector(
   "#close-final-modal-button"
 );
 export const finalMessage = document.querySelector("#final-message");
+export const openRatingModalButton = document.querySelector(
+  "#open-rating-modal-button"
+);
+export const ratingModal = document.querySelector("#rating-modal");
+export const ratingStarsContainer = document.querySelector(
+  "#rating-stars-container"
+);
+export const ratingStars = document.querySelectorAll(".rating-star");
 export const nonModalContent = document.querySelector(":not(:modal)");
