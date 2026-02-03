@@ -234,7 +234,7 @@
     text-align: center;
   }
 
-  #thank-you-modal:open {
+  #thank-you-modal[open] {
     color: #065f46;
     font-size: 2rem;
     display: flex;
@@ -255,7 +255,7 @@
     cursor: pointer;
   }
 
-  #rating-modal:open {
+  #rating-modal[open] {
     border: none;
     margin: auto auto 0;
     inline-size: 100%;
