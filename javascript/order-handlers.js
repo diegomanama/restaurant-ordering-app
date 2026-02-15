@@ -2,11 +2,11 @@
 
 // Objects
 import { menuArray } from "./data.js";
-import { order } from "./orderObject.js";
+import { order } from "./order-object.js";
 
 // Utils
 import { addEventListenerAll } from "../utils/addEventListenerAll.js";
-import { renderOrder } from "./renderOrder.js";
+import { renderOrder } from "./render-order.js";
 
 // DOM References
 import { addItemButtons } from "./render-menu-entries.js";

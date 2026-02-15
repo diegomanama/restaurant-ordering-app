@@ -1,4 +1,4 @@
-import { order } from "./orderObject.js";
+import { order } from "./order-object.js";
 import { orderTableBody, totalPriceCell } from "./shared-dom-refs.js";
 
 export const renderOrder = () => {
