@@ -1,14 +1,20 @@
 @layer initial-rendering {
   body {
-    font-family: "Smythe", system-ui;
+    font-family: "Comfortaa", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
 
   header {
-    background: no-repeat center/cover url(/images/hamburger.jpg);
+    background: no-repeat center/cover url(/images/header.png);
     color: #ffffff;
+    text-shadow: 0px 0px 5px rgb(255, 0, 0);
+    text-align: center;
     padding: 2.8rem;
+  }
+
+  h1 {
+    font-family: "Paytone One", sans-serif;
   }
 
   /* Menu section */
@@ -41,7 +47,15 @@
   }
 
   .item-image {
-    font-size: 3rem;
+    font-size: 2rem;
+    block-size: 3em;
+    min-block-size: 96px;
+    min-inline-size: 96px;
+    max-block-size: 144px;
+    max-inline-size: 144px;
+
+    border-radius: 25%;
+    object-fit: cover;
   }
 
   .add-item-button {

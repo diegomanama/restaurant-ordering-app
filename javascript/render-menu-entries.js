@@ -6,10 +6,9 @@ const menuEntriesHTML = menuItems
     return `
         <div class="menu-entry">
             <article class="menu-item">
-                <div class="item-image">${item.emoji}</div>
+                <img class="item-image" src="${item.image}">
                 <div class="item-data">
                     <h2 class="item-name">${item.name}</h2>
-                    <p class="ingredients">${item.ingredients}</p>
                     <p class="price">$${item.price}</p>
                 </div>
             </article>
