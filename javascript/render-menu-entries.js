@@ -1,4 +1,4 @@
-import { menuArray as menuItems } from "./data.js";
+import { menuItemsArray as menuItems } from "./menuItemsArray.js";
 import { menu } from "./shared-dom-refs.js";
 
 const menuEntriesHTML = menuItems
