@@ -2,7 +2,6 @@ import {
   orderTableBody,
   checkOrderButton,
   orderModal,
-  nonModalContent,
 } from "./shared-dom-refs.js";
 
 const handleEmptyOrderState = () => {

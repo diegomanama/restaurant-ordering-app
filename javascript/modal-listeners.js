@@ -20,7 +20,7 @@ const modals = [orderModal, paymentModal, thankYouModal, ratingModal];
 
 // Functions
 
-export const equateElementHeights = (baseEl, targetEL) => {
+const equateElementHeights = (baseEl, targetEL) => {
   targetEL.style.blockSize = window
     .getComputedStyle(baseEl)
     .getPropertyValue("block-size");
