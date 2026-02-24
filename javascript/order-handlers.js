@@ -2,7 +2,7 @@
 
 // Objects
 import { menuItemsArray as menuItems } from "./menuItemsArray.js";
-import { order } from "./order-object.js";
+import * as order from "./order.js";
 
 // Utils
 import { addEventListenerAll } from "../utils/addEventListenerAll.js";
