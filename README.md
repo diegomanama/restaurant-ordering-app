@@ -1,15 +1,43 @@
-## Credits
+# Restaurant Ordering App
 
-Built as part of the Scrimba Fullstack Developer Path — solo project.
+## Project Overview
+
+This restaurant ordering app was built as a **solo project** while following the Scrimba Fullstack Developer Path.
+
+The original assignment provided:
+
+- Figma design files
+- Core feature requirements
+- Stretch goals
+
+I implemented all required and stretch goals, and extended the project with additional features and custom design changes. While the final result includes my own improvements and stylistic decisions, the project concept, initial design direction, and requirements were provided by Scrimba.
+
+This is **not a 100% original concept**, but rather my personal implementation and extension of a guided solo project.
+
+---
+
+## My Contributions Beyond the Brief
+
+- Implemented all required functionality
+- Completed stretch goals
+- Added extra features beyond the original specification
+- Customized the UI design
+- Refactored and organized the code according to my own conventions
+
+---
 
 ## About Scrimba
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+Scrimba is an online learning platform focused on interactive coding education.
 
-- [Our courses](https://scrimba.com/courses)
-- [The Fullstack Developer Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+The Fullstack Developer Path is designed to teach the skills required to become a junior developer, covering both frontend and backend development.
 
-Happy Coding!
+- [https://scrimba.com/courses](https://scrimba.com/courses)
+- [https://scrimba.com/fullstack-path-c0fullstack](https://scrimba.com/fullstack-path-c0fullstack)
+- [https://scrimba.com/pricing](https://scrimba.com/pricing)
+
+---
+
+## Disclaimer
+
+This repository represents my own implementation of a Scrimba project brief. It is shared for portfolio and learning purposes.
