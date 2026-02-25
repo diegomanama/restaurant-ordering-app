@@ -2,6 +2,7 @@
 
 let items = [];
 let price = 0;
+let subtotal = 0;
 let discount = 0;
 let discountCriteria = {
   // The order of the criteria in the object matters, as they will be applied in that order.
@@ -13,7 +14,7 @@ let discountCriteria = {
 };
 
 const updatePrice = () => {
-  const subtotal = items.reduce((total, item) => {
+  subtotal = items.reduce((total, item) => {
     return total + item.price * item.amount;
   }, 0);
 
@@ -127,7 +128,7 @@ const removeItem = (item) => {
 
 const resetOrder = () => {
   items = [];
-  price = 0;
+  updatePrice();
 };
 
-export { items, price, addItem, removeItem, resetOrder };
+export { items, price, subtotal, discount, addItem, removeItem, resetOrder };

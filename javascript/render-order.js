@@ -1,5 +1,10 @@
 import * as order from "./order.js";
-import { orderTableBody, totalPriceCell } from "./shared-dom-refs.js";
+import {
+  orderTableBody,
+  subtotalPriceCell,
+  discountsCell,
+  totalPriceCell,
+} from "./shared-dom-refs.js";
 
 export const renderOrder = () => {
   // Create rows for new items
@@ -50,5 +55,7 @@ export const renderOrder = () => {
   });
 
   // Update total price
+  subtotalPriceCell.textContent = `$${order.subtotal}`;
+  discountsCell.textContent = `- $${order.discount}`;
   totalPriceCell.textContent = `$${order.price}`;
 };

@@ -2,6 +2,8 @@
 export const menu = document.querySelector("#menu");
 export const addItemButtons = document.querySelectorAll(".add-item-button");
 export const orderTableBody = document.querySelector("#order-table > tbody");
+export const subtotalPriceCell = document.querySelector("#subtotal-price-cell");
+export const discountsCell = document.querySelector("#discounts-cell");
 export const totalPriceCell = document.querySelector("#total-price-cell");
 export const checkOrderButton = document.querySelector("#check-order-button");
 export const main = document.querySelector("main");
