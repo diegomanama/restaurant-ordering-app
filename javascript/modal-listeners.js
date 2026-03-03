@@ -47,9 +47,7 @@ closePaymentButton.addEventListener("click", () => {
 cardDetailsForm.addEventListener("submit", () => {
   const customerName = new FormData(cardDetailsForm).get("customer-name");
 
-  thankYouMessage.textContent = customerName
-    ? `Thanks, ${customerName}! Your order is on its way`
-    : `Thanks! Your order is on its way`;
+  thankYouMessage.textContent = `Thanks, ${customerName}! Your order is on its way`;
   equateElementHeights(paymentModal, thankYouModal);
   // The dialog is natively automatically closed when the form is submitted
   thankYouModal.showModal();
