@@ -1,5 +1,6 @@
 import {
   checkOrderButton,
+  popupModal,
   closeOrderModalButton,
   completeOrderButton,
   orderModal,
@@ -15,7 +16,13 @@ import {
 } from "./shared-dom-refs.js";
 import { addEventListenerAll } from "../utils/addEventListenerAll.js";
 
-const modals = [orderModal, paymentModal, thankYouModal, ratingModal];
+const modals = [
+  popupModal,
+  orderModal,
+  paymentModal,
+  thankYouModal,
+  ratingModal,
+];
 
 // Functions
 
@@ -28,7 +35,7 @@ const equateElementHeights = (baseEl, targetEL) => {
 // Event listeners
 checkOrderButton.addEventListener("click", () => {
   orderModal.showModal();
-  nonModalContent.classList.toggle("blur");
+  nonModalContent.classList.toggle("no-blur");
 });
 
 closeOrderModalButton.addEventListener("click", () => {
@@ -81,5 +88,5 @@ addEventListenerAll(modals, "close", () => {
     return;
   }
 
-  nonModalContent.classList.toggle("blur");
+  nonModalContent.classList.toggle("no-blur");
 });

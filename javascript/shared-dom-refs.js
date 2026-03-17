@@ -7,6 +7,8 @@ export const discountsCell = document.querySelector("#discounts-cell");
 export const totalPriceCell = document.querySelector("#total-price-cell");
 export const checkOrderButton = document.querySelector("#check-order-button");
 export const main = document.querySelector("main");
+export const popupModal = document.querySelector("#popup-modal");
+export const hidePopupCheckbox = document.querySelector("#hide-popup-checkbox");
 export const closeOrderModalButton = document.querySelector(
   "#close-order-modal-button"
 );

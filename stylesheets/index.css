@@ -1,4 +1,12 @@
 @layer initial-rendering {
+  :root {
+    filter: blur(5px);
+  }
+
+  :root.no-blur {
+    filter: blur();
+  }
+
   body {
     font-family: "Comfortaa", sans-serif;
     font-weight: 400;
@@ -15,6 +23,39 @@
 
   h1 {
     font-family: "Paytone One", sans-serif;
+  }
+
+  /* Popup modal */
+
+  #popup-modal {
+    margin-block: auto;
+    margin-inline: 1rem;
+    max-block-size: 95vh;
+    text-align: center;
+    padding: 2.8rem;
+    background: #ffffff;
+    border-radius: 30px;
+    border: none;
+  }
+
+  #popup-modal h2 {
+    margin-block-end: 1rem;
+  }
+
+  #popup-modal .checkbox-container {
+    text-align: start;
+    margin-block: 2rem 1rem;
+  }
+
+  #close-popup-modal-button {
+    background: #16db99;
+    color: #ffffff;
+    border: none;
+    inline-size: 100%;
+    padding-block: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 100vh;
   }
 
   /* Menu section */
@@ -301,10 +342,6 @@
 }
 
 @layer post-initial-rendering {
-  .blur {
-    filter: blur(5px);
-  }
-
   .enabled-button {
     cursor: pointer;
   }
