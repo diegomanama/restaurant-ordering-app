@@ -1,4 +1,5 @@
 import * as order from "./order.js";
+import { requestLanguageData } from "../utils/requestLanguageData.js";
 import {
   orderTableBody,
   subtotalPriceCell,
@@ -8,7 +9,7 @@ import {
 
 export const renderOrder = () => {
   // Create rows for new items
-  order.items.forEach((item) => {
+  order.items.forEach(async (item) => {
     if (
       !Array.from(orderTableBody.children)
         .map((element) => element.dataset.itemName)
@@ -21,7 +22,7 @@ export const renderOrder = () => {
       newTableRow.innerHTML = `
         <td class="product-main-cell">
           <span class="item-name-container">${item.name} × ${item.amount}</span>
-          <button class="remove-item-button" data-item-name="${item.name}">Remove</button>
+          <button class="remove-item-button" data-item-name="${item.name}">${await requestLanguageData("removeButtons")}</button>
         </td>
         <td class="product-price-cell">$${item.price * item.amount}</td>
       `;

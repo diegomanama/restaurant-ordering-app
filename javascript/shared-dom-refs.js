@@ -9,6 +9,12 @@ export const checkOrderButton = document.querySelector("#check-order-button");
 export const main = document.querySelector("main");
 export const popupModal = document.querySelector("#popup-modal");
 export const hidePopupCheckbox = document.querySelector("#hide-popup-checkbox");
+export const hidePopupCheckboxLabel = document.querySelector(
+  "label[for='hide-popup-checkbox']"
+);
+export const closePopupModalButton = document.querySelector(
+  "#close-popup-modal-button"
+);
 export const closeOrderModalButton = document.querySelector(
   "#close-order-modal-button"
 );
@@ -16,11 +22,16 @@ export const completeOrderButton = document.querySelector(
   "#complete-order-button"
 );
 export const orderModal = document.querySelector("#order-modal");
+export const orderModalHeading = orderModal.querySelector("h2");
+export const discountsHeaderCell = document.querySelector(
+  "#discounts-header-cell"
+);
 export const paymentModal = document.querySelector("#payment-modal");
 export const closePaymentButton = document.querySelector(
   "#close-payment-button"
 );
 export const cardDetailsForm = document.querySelector("#card-details-form");
+export const cardDetailsFormHeading = cardDetailsForm.querySelector("h2");
 export const payButton = document.querySelector("#pay-button");
 export const thankYouModal = document.querySelector("#thank-you-modal");
 export const closeThankYouModalButton = document.querySelector(
@@ -31,6 +42,7 @@ export const openRatingModalButton = document.querySelector(
   "#open-rating-modal-button"
 );
 export const ratingModal = document.querySelector("#rating-modal");
+export const ratingModalQuestion = ratingModal.querySelector("p");
 export const ratingStarsContainer = document.querySelector(
   "#rating-stars-container"
 );

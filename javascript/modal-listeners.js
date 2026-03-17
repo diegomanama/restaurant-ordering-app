@@ -9,7 +9,6 @@ import {
   cardDetailsForm,
   thankYouModal,
   closeThankYouModalButton,
-  thankYouMessage,
   openRatingModalButton,
   ratingModal,
   nonModalContent,
@@ -52,9 +51,6 @@ closePaymentButton.addEventListener("click", () => {
 });
 
 cardDetailsForm.addEventListener("submit", () => {
-  const customerName = new FormData(cardDetailsForm).get("customer-name");
-
-  thankYouMessage.textContent = `Thanks, ${customerName}! Your order is on its way`;
   equateElementHeights(paymentModal, thankYouModal);
   // The dialog is natively automatically closed when the form is submitted
   thankYouModal.showModal();

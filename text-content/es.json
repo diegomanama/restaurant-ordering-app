@@ -1,0 +1,22 @@
+{
+  "checkOrderButton": "Verificar Orden",
+  "popupModalHeading": "Aviso",
+  "popupModalp1": "Este sitio web es un proyecto de demostración.",
+  "popupModalp2": "Cualquier información que ingreses (incluido el formulario de pago <strong>no se envía ni se guarda en ningún servidor</strong>. Los datos pueden existir temporalmente solo en tu navegador para que la demostración funcione.",
+  "popupModalp3": "Por favor, <strong>no ingreses información personal o bancaria real</strong>. Usa datos de prueba o inventados.",
+  "popupModalp4": "Las imágenes utilizadas en este sitio fueron <strong>generadas con IA</strong> y se usan solo con fines ilustrativos. No representan productos o comidas reales.",
+  "hidePopupCheckbox": "No mostrar de nuevo",
+  "closePopupModalButton": "Continuar",
+  "orderModalHeading": "Tu orden",
+  "removeButtons": "Eliminar",
+  "discountsHeaderCell": "Descuentos",
+  "completeOrderButton": "Completar orden",
+  "cardDetailsFormHeading": "Introduzca los datos de tarjeta",
+  "customerNameInputPlaceholder": "Introduzca su nombre",
+  "cardNumberInputPlaceholder": "Introduzca número de tarjeta",
+  "cvvInputPlaceholder": "Introduzca CVV",
+  "payButton": "Pagar",
+  "thankYouMessage": "Gracias, {customer-name}! Tu order está en camino.",
+  "openRatingModalButton": "Valorar experiencia",
+  "ratingModalQuestion": "¿Cómo fue tu experiencia con nosotros?"
+}
