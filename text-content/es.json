@@ -16,7 +16,7 @@
   "cardNumberInputPlaceholder": "Introduzca número de tarjeta",
   "cvvInputPlaceholder": "Introduzca CVV",
   "payButton": "Pagar",
-  "thankYouMessage": "Gracias, {customer-name}! Tu order está en camino.",
+  "thankYouMessage": "¡Gracias, {customer-name}! Tu pedido está en camino.",
   "openRatingModalButton": "Valorar experiencia",
   "ratingModalQuestion": "¿Cómo fue tu experiencia con nosotros?"
 }
