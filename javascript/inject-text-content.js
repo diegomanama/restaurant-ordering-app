@@ -10,6 +10,7 @@ import {
   cardDetailsForm,
   cardDetailsFormHeading,
   payButton,
+  thankYouModal,
   thankYouMessage,
   openRatingModalButton,
   ratingModalQuestion,
@@ -42,10 +43,19 @@ ratingModalQuestion.textContent = data.ratingModalQuestion;
 
 // Dynamic injection
 
-cardDetailsForm.addEventListener("submit", () => {
+thankYouModal.addEventListener("toggle", () => {
+  if (!thankYouModal.open) return;
   const customerName = new FormData(cardDetailsForm).get("customer-name");
-  thankYouMessage.textContent = data.thankYouMessage.replace(
-    "{customer-name}",
-    customerName
-  );
+
+  if (document.URL.includes("hidePaymentModal=true")) {
+    thankYouMessage.textContent = data.thankYouMessage.replace(
+      ", {customer-name}",
+      ""
+    );
+  } else {
+    thankYouMessage.textContent = data.thankYouMessage.replace(
+      "{customer-name}",
+      customerName
+    );
+  }
 });

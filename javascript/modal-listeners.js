@@ -43,7 +43,13 @@ closeOrderModalButton.addEventListener("click", () => {
 
 completeOrderButton.addEventListener("click", () => {
   orderModal.close();
-  paymentModal.showModal();
+
+  if (document.URL.includes("hidePaymentModal=true")) {
+    equateElementHeights(paymentModal, thankYouModal);
+    thankYouModal.showModal();
+  } else {
+    paymentModal.showModal();
+  }
 });
 
 closePaymentButton.addEventListener("click", () => {
