@@ -3,7 +3,7 @@
   "popupModalHeading": "Aviso",
   "popupModalp1": "Este sitio web es un proyecto de demostración.",
   "popupModalp2": "Cualquier información que ingreses {emphasis-note} <strong>no se envía ni se guarda en ningún servidor</strong>. Los datos solo son usados temporalmente en tu navegador para que la demostración funcione.",
-  "emphasis-note": "(incluido el formulario de pago)",
+  "emphasisNote": "(incluido el formulario de pago)",
   "popupModalp3": "Las imágenes utilizadas en este sitio fueron <strong>generadas con IA</strong> y se usan solo con fines ilustrativos. No representan comidas o fotos reales.",
   "hidePopupCheckbox": "No mostrar de nuevo",
   "closePopupModalButton": "Continuar",

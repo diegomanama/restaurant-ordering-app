@@ -23,10 +23,12 @@ const data = await requestLanguageData();
 checkOrderButton.textContent = data.checkOrderButton;
 popupModal.querySelector("h2").textContent = data.popupModalHeading;
 popupModal.querySelector("p:nth-of-type(1)").textContent = data.popupModalp1;
-popupModal.querySelector("p:nth-of-type(2)").innerHTML = data.popupModalp2;
 if (document.URL.includes("hidePaymentModal=true")) {
   popupModal.querySelector("p:nth-of-type(2)").innerHTML =
     data.popupModalp2.replace(" {emphasis-note}", "");
+} else {
+  popupModal.querySelector("p:nth-of-type(2)").innerHTML =
+    data.popupModalp2.replace("{emphasis-note}", data.emphasisNote);
 }
 popupModal.querySelector("p:nth-of-type(3)").innerHTML = data.popupModalp3;
 hidePopupCheckboxLabel.textContent = data.hidePopupCheckbox;
