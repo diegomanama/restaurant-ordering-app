@@ -121,8 +121,8 @@
 
   #check-order-button {
     position: fixed;
-    inset-block-end: 0;
-    inset-inline: 0;
+    inset-block-end: 2vh;
+    inset-inline: 10vw;
     border: none;
     background: #16db99;
     padding: 0.5rem;
@@ -131,6 +131,8 @@
     max-block-size: var(--check-order-button-max-block-size);
     cursor: not-allowed;
     pointer-events: auto;
+    border-radius: 100vh;
+    box-shadow: 0px 0px 10px #000000;
   }
 
   /* Order modal */
@@ -207,6 +209,7 @@
     inline-size: 100%;
     padding-block: 1rem;
     cursor: pointer;
+    border-radius: 100vh;
   }
 
   .close-button {
@@ -265,6 +268,7 @@
     padding: 1rem;
     border: 1px solid #757575;
     inline-size: 100%;
+    border-radius: 5px;
   }
 
   #card-details-form input::placeholder {
@@ -279,6 +283,7 @@
     padding-block: 1rem;
     cursor: pointer;
     font-weight: bold;
+    border-radius: 100vh;
   }
 
   .close-floating-modal-button {
@@ -288,9 +293,8 @@
   .floating-modal {
     margin: auto;
     border: none;
-    border-radius: 3px;
     padding: 1.5rem;
-    inline-size: 80vw;
+    inline-size: 100vw;
     text-align: center;
   }
 
