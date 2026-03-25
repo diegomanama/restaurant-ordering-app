@@ -11,6 +11,7 @@ import {
   closeThankYouModalButton,
   openRatingModalButton,
   ratingModal,
+  closeRatingModalButton,
   nonModalContent,
 } from "./shared-dom-refs.js";
 import { addEventListenerAll } from "../utils/addEventListenerAll.js";
@@ -69,6 +70,10 @@ closeThankYouModalButton.addEventListener("click", () => {
 openRatingModalButton.addEventListener("click", () => {
   thankYouModal.close();
   ratingModal.showModal();
+});
+
+closeRatingModalButton.addEventListener("click", () => {
+  ratingModal.close();
 });
 
 ratingModal.addEventListener("click", (event) => {

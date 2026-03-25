@@ -42,6 +42,9 @@ export const openRatingModalButton = document.querySelector(
   "#open-rating-modal-button"
 );
 export const ratingModal = document.querySelector("#rating-modal");
+export const closeRatingModalButton = document.querySelector(
+  "#close-rating-modal-button"
+);
 export const ratingModalQuestion = ratingModal.querySelector("p");
 export const ratingStarsContainer = document.querySelector(
   "#rating-stars-container"

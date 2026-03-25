@@ -325,13 +325,35 @@
     inline-size: 100%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    padding: 1rem;
+    padding-block-start: 0rem;
+    padding-block-end: 2rem;
     font-size: 1.2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #065f46;
+  }
+
+  #close-rating-modal-button-container {
+    block-size: 3rem;
+    inline-size: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #close-rating-modal-button {
+    inset: 1rem 1rem auto auto;
+    position: initial;
+  }
+
+  #close-rating-modal-button > .close-icon {
+    position: initial;
+  }
+
+  #rating-modal > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   #rating-stars-container {
