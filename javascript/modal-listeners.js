@@ -1,6 +1,5 @@
 import {
   checkOrderButton,
-  popupModal,
   closeOrderModalButton,
   completeOrderButton,
   orderModal,
@@ -12,17 +11,10 @@ import {
   openRatingModalButton,
   ratingModal,
   closeRatingModalButton,
+  modals,
   nonModalContent,
 } from "./shared-dom-refs.js";
 import { addEventListenerAll } from "../utils/addEventListenerAll.js";
-
-const modals = [
-  popupModal,
-  orderModal,
-  paymentModal,
-  thankYouModal,
-  ratingModal,
-];
 
 // Functions
 

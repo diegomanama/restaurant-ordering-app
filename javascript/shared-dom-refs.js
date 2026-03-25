@@ -50,4 +50,11 @@ export const ratingStarsContainer = document.querySelector(
   "#rating-stars-container"
 );
 export const ratingStars = document.querySelectorAll(".rating-star");
+export const modals = [
+  popupModal,
+  orderModal,
+  paymentModal,
+  thankYouModal,
+  ratingModal,
+];
 export const nonModalContent = document.querySelector(":not(:modal)");
