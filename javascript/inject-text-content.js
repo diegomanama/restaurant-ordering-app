@@ -24,8 +24,11 @@ checkOrderButton.textContent = data.checkOrderButton;
 popupModal.querySelector("h2").textContent = data.popupModalHeading;
 popupModal.querySelector("p:nth-of-type(1)").textContent = data.popupModalp1;
 popupModal.querySelector("p:nth-of-type(2)").innerHTML = data.popupModalp2;
+if (document.URL.includes("hidePaymentModal=true")) {
+  popupModal.querySelector("p:nth-of-type(2)").innerHTML =
+    data.popupModalp2.replace(" {emphasis-note}", "");
+}
 popupModal.querySelector("p:nth-of-type(3)").innerHTML = data.popupModalp3;
-popupModal.querySelector("p:nth-of-type(4)").innerHTML = data.popupModalp4;
 hidePopupCheckboxLabel.textContent = data.hidePopupCheckbox;
 closePopupModalButton.textContent = data.closePopupModalButton;
 orderModalHeading.textContent = data.orderModalHeading;
