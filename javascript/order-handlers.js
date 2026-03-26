@@ -12,6 +12,7 @@ import { renderOrder } from "./render-order.js";
 import { addItemButtons } from "./render-menu-entries.js";
 import { orderTableBody } from "./shared-dom-refs.js";
 import { cardDetailsForm } from "./shared-dom-refs.js";
+import { thankYouModal } from "./shared-dom-refs.js";
 
 // Event Listeners & Observers
 
@@ -57,4 +58,11 @@ removeButtonsObserver.observe(orderTableBody, { childList: true });
 cardDetailsForm.addEventListener("submit", () => {
   order.resetOrder();
   renderOrder();
+});
+
+thankYouModal.addEventListener("toggle", () => {
+  if (thankYouModal.open) {
+    order.resetOrder();
+    renderOrder();
+  }
 });
