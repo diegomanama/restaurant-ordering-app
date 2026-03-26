@@ -122,6 +122,7 @@
   #check-order-button {
     position: fixed;
     inset-block-end: 2vh;
+    translate: 0 calc(2vh + var(--check-order-button-max-block-size));
     inset-inline: 10vw;
     border: none;
     background: #16db99;
@@ -129,10 +130,10 @@
     font-size: 1.5rem;
     cursor: pointer;
     max-block-size: var(--check-order-button-max-block-size);
-    cursor: not-allowed;
     pointer-events: auto;
     border-radius: 100vh;
     box-shadow: 0px 0px 10px #000000;
+    transition: translate 200ms linear;
   }
 
   /* Order modal */
@@ -369,6 +370,6 @@
 
 @layer post-initial-rendering {
   .enabled-button {
-    cursor: pointer;
+    translate: none;
   }
 }
