@@ -54,32 +54,44 @@
       </form>
     </dialog>
     <dialog id="order-modal">
-      <h2></h2>
-      <table id="order-table">
-        <tbody></tbody>
-        <tfoot>
-          <tr>
-            <td>Subtotal</td>
-            <td id="subtotal-price-cell"></td>
-          </tr>
-          <tr>
-            <td id="discounts-header-cell"></td>
-            <td id="discounts-cell"></td>
-          </tr>
-          <tr>
-            <td>Total</td>
-            <td id="total-price-cell"></td>
-          </tr>
-        </tfoot>
-      </table>
-      <button id="complete-order-button"></button>
-      <button
-        id="close-order-modal-button"
-        class="close-button"
-        aria-label="Close order modal"
-      >
-        <ion-icon name="close" class="close-icon" aria-hidden="true"></ion-icon>
-      </button>
+      <section>
+        <header>
+          <h2></h2>
+          <button
+            id="close-order-modal-button"
+            class="close-button"
+            aria-label="Close order modal"
+          >
+            <ion-icon
+              name="close"
+              class="close-icon"
+              aria-hidden="true"
+            ></ion-icon>
+          </button>
+        </header>
+        <div id="order-table-container">
+          <table id="order-table">
+            <tbody></tbody>
+            <tfoot>
+              <tr>
+                <td>Subtotal</td>
+                <td id="subtotal-price-cell"></td>
+              </tr>
+              <tr>
+                <td id="discounts-header-cell"></td>
+                <td id="discounts-cell"></td>
+              </tr>
+              <tr>
+                <td>Total</td>
+                <td id="total-price-cell"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <footer>
+          <button id="complete-order-button"></button>
+        </footer>
+      </section>
     </dialog>
     <dialog id="payment-modal" class="floating-modal">
       <button

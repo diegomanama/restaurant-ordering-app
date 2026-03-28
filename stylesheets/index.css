@@ -13,7 +13,7 @@
     font-style: normal;
   }
 
-  header {
+  body > header {
     background: no-repeat center/cover url(/images/header.png);
     color: #ffffff;
     text-shadow: 0px 0px 5px rgb(255, 0, 0);
@@ -151,17 +151,38 @@
     margin-block-start: auto;
     inline-size: 100%;
     text-align: center;
-    padding: 2.8rem;
+    padding: 0;
     background: #ffffff;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border: none;
+    max-block-size: 95%;
+  }
+
+  #order-modal header {
+    position: sticky;
+    inset-block-start: 0;
+  }
+
+  #order-modal h2 {
+    background: #ffffff;
+    padding-block: 1.4rem;
+  }
+
+  #order-modal footer {
+    padding: 1rem 2.8rem 1.5rem;
+    position: sticky;
+    inset-block-end: 0;
+    background: #ffffff;
+  }
+
+  #order-modal #order-table-container {
+    padding-inline: 2.8rem;
   }
 
   #order-modal table {
     inline-size: 100%;
     border-collapse: collapse;
-    margin-block-end: 1rem;
   }
 
   td {
@@ -196,7 +217,10 @@
   }
 
   tfoot {
-    border-block-start: 1px solid #000000;
+    box-shadow: inset 0px 1px #000000;
+    background: #ffffff;
+    position: sticky;
+    inset-block-end: 6rem;
   }
 
   #discounts-cell {
@@ -208,7 +232,7 @@
     color: #ffffff;
     border: none;
     inline-size: 100%;
-    padding-block: 1rem;
+    block-size: 3.5rem;
     cursor: pointer;
     border-radius: 100vh;
   }
